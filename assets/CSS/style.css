@@ -1,0 +1,173 @@
+body {
+  background-color: #ffe4f8;
+}
+header {
+  background-color: #ffe4f8;
+  padding-bottom: 10%;
+  margin-bottom: 2%;
+
+}
+h1::before, h1::after {
+  display:inline-block;
+  vertical-align: middle;
+  height:10px;
+  width:100px;
+  background: #ffffff;
+  content:""
+}
+@keyframes slidein {/* Encadrement du nom */
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+#Nom {
+  text-align: center;
+  font-style: normal;
+  font-family: serif;
+  font-size: 400%;
+  position: relative;
+  top: 80px;
+  font-family: "Mansalva";
+}
+#Fonction {
+  text-align: center;
+  font-style: normal;
+  font-family: serif;
+  font-size: 190%;
+  position: relative;
+  top: 90px;
+  font-family: "Advent Pro";
+  /* Slide du header */
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.about {
+  width: 200px;
+  border: 1px solid black;
+  text-align: justify;
+  font-family: "Advent Pro";
+  font-size: 150%;
+}
+.about h3 {
+  text-align: center;
+}
+.about img {
+  width: 80%;
+  border-radius: 10% 30%;
+}
+.container2 {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: flex-start;
+}
+.container2 h3 {
+  text-align: center;
+}
+.container3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.container3 h3 {
+  text-align: center;
+}
+.qualifications {
+  border: 1px solid black;
+  width: 300px;
+  font-family: "Advent Pro";
+  font-size: 150%;
+  border-radius: 50% 20% / 10% 40%; /* encadrement du bloc4 */
+  padding-left: 8%;
+
+}
+.experiences {
+  border: 1px solid black;
+  width: 300px;
+  font-family: "Advent Pro";
+  font-size: 150%;
+  border-radius: 40% 10% / 10% 40%;  /* encadrement du bloc */
+  padding-left: 10%;
+}
+.network{
+  border: 1px solid black;
+  width: 150px;
+  font-family: "Advent Pro";
+  font-size: 170%;
+  text-align: center;
+}
+.link {
+   width: 50%; /* taille des images "network" */
+}
+.contact {
+  background-color: #ffe4f8;
+}
+#contact2 {
+  text-align: center;
+  font-size: 200%;
+  font-family: "Advent Pro";
+}
+.containerImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.containerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 1%;
+    font-family: "Advent Pro";
+    font-size: 140%;
+    }
+    #phoneNumberImg {
+      border: 1px solid #ffffff;
+
+      background-color: #ffffff;
+    }
+    #mailImg {
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
+    }
+    #localisationImg {
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
+    }
+    #phoneNumber{
+      border: 1px solid #ffffff;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      background-color: #ffffff;
+    }
+    #mail{
+      border: 1px solid #ffffff;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      background-color: #ffffff;
+    }
+    #localisation {
+      border: 1px solid #ffffff;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      background-color: #ffffff;
+    }
