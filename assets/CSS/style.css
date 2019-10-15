@@ -32,16 +32,16 @@ h1::before, h1::after {
   font-family: serif;
   font-size: 400%;
   position: relative;
-  top: 80px;
+  top: 20%;
   font-family: "Mansalva";
 }
 .Fonction {
   text-align: center;
   font-style: normal;
   font-family: serif;
-  font-size: 190%;
+  font-size: 200%;
   position: relative;
-  top: 90px;
+  top: 70%;
   font-family: "Advent Pro";
   /* Slide du header */
   animation-duration: 3s;
