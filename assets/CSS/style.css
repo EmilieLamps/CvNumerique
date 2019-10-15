@@ -58,6 +58,7 @@ h1::before, h1::after {
   text-align: justify;
   font-family: "Advent Pro";
   font-size: 150%;
+  box-shadow: 12px 12px 2px 1px rgb(222, 213, 221);
 }
 .about h3 {
   text-align: center;
@@ -127,19 +128,19 @@ footer {
   font-size: 200%;
   font-family: "Advent Pro";
 }
-.containerImg {
+/* .containerImg { */
     /* display: flex;
     justify-content: space-arou
     align-items: flex-end; */
-}
+/* }
 .containerInfo {
     /* display: flex;
     justify-content: space-between;
     align-items: baseline; */
-    padding-bottom: 1%;
+    /* padding-bottom: 1%;
     font-family: "Advent Pro";
     font-size: 140%;
-    }
+    } */
     /* #phoneNumberImg {
       border: 1px solid #ffffff;
       background-color: #ffffff; */
