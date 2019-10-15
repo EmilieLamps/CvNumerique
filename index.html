@@ -1,61 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> CV Numérique </title>
-    <link rel="stylesheet" type="text/css" href="assets/CSS/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header> <!--Insérer les infos "Nom & Prénom" -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/CSS/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+  <title> CV Numérique </title>
+  <!-- Polices -->
+  <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
       <h1 id="Nom">Emilie Lamps</h1>
       <h2 id="Fonction">Développeur Web Junior</h2>
-    </header>
-    <!-- suppression de la navBar : mauvais rendu au zoning -->
-    <div class="container"> <!-- Premier container -->
-      <aside class="about"> <!--Rubrique "A propos" La placer sur un côté-->
+  </header>
+          <!-- Début colonne A propos -->
+<div class="container-fluid">
+  <div <class="row justify-content-start">
+    <div class="col-md-4">
+      <aside class="about">
         <h3>A propos</h3>
-        <img src="assets/IMG/profil.jpg" alt="photo de profil">
-        <p>présentation </p><address>
-
-        </address>
+        <!-- <img src="assets/IMG/profil.jpg" alt="photo de profil"> -->
+        <p>Présentation </p>
       </aside>
-    <div class="container2">
+    </div>
+  </div>
+<!-- </div> -->
+              <!-- Fin de la colonne A propos  -->
+              <!-- Début colonne Formation -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
       <section class="qualifications">
         <h3>Formation</h3>
-        <p>La Manu 805 heures</p>
+        <p>La Manu : formation Développeur Web & Web Mobile</p>
       </section>
     </div>
-    <div class="container3">
-      <section class="experiences"> <!-- Insérer les expériences-->
+  </div>
+</div>
+              <!-- Fin de la colonne Formation -->
+              <!-- Début de la colonne expériences -->
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-md-5">
+      <section class="experiences">
         <h3>Expériences</h3>
-        <p>Promod</p>
-        <p>L'Effet Mode</p>
+        <p>2015-Aujourd'hui : PROMOD : Conseillère de mode</p>
+        <p>2009-2014 : L'Effet Mode : Auto-Entrepreneur</p>
       </section>
     </div>
-      <aside class="network">
-        <h3>Liens</h3>
-        <img class="link" src="assets/IMG/github-logo.png" alt="github-logo"><p>Github</p>
-        <img class="link" src="assets/IMG/linkedin.svg" alt="linkedin logo"><p>LinkedIn</p>
-        <img class="link" src="assets/IMG/Viadeo_logo.png" alt="viadeo logo"><p>Viadeo</p>
-        <img class="link" src="assets/IMG/print1.png" alt="print"><p>Print</p>
-      </aside>
+  </div>
+</div>
+              <!-- Fin de la colonne expériences  -->
+              <!-- Début barre latérale Liens  -->
+<!-- <div class="container-fluid"> -->
+  <div class="row justify-content-end">
+    <aside class="network">
+      <h3>Liens</h3>
+      <img class="link" src="assets/IMG/github-logo.png" alt="github-logo"><p>Github</p>
+      <img class="link" src="assets/IMG/linkedin.svg" alt="linkedin logo"><p>LinkedIn</p>
+      <img class="link" src="assets/IMG/Viadeo_logo.png" alt="viadeo logo"><p>Viadeo</p>
+      <img class="link" src="assets/IMG/print1.png" alt="print"><p>Print</p>
+    </aside>
+  </div>
+</div>
+              <!-- Fin de la barre latérale Liens -->
+              <!--Début du footer -->
+<footer class="container">
+              <!-- Images -->
+    <p id="contact2">Contact</p>
+    <div class="row">
+        <div class="col-md-4">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </div>
     </div>
-    <footer class="contact">
-      <p id="contact2">Contact</p> <!-- Utiliser flexbox, créer une boite par info; inspi. "Stephen Traes" -->
-      <div class="containerImg">
-        <div id="phoneNumberImg"><img src="assets/IMG/phoneNumber.jpg" alt="telephone"></div>
-        <div id="mailImg"><img src="assets/IMG/mail.jpg" alt="mail"></div>
-        <div id="localisationImg"><img src="assets/IMG/localisation.jpg" alt="localisation"></div>
+              <!-- Infos contact -->
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+            <div id="phoneNumber">06.32.89.90.96</div>
+            <div id="mail">emilie.lamps@gmail.com</div>
+            <div id="localisation">Yvrench</div>
+          </div>
       </div>
-      <div class="containerInfo">
-        <div id="phoneNumber">06.32.89.90.96</div>
-        <div id="mail">emilie.lamps@gmail.com</div>
-        <div id="localisation">Yvrench</div>
-      </div>
-    </footer>
-  </body>
+    </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>
