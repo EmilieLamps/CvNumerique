@@ -24,7 +24,7 @@ h1::before, h1::after {
     width: 100%;
   }
 }
-/* début du bloc 1 */
+        /* début du header */
 #Nom {
   text-align: center;
   font-style: normal;
@@ -46,10 +46,10 @@ h1::before, h1::after {
   animation-duration: 3s;
   animation-name: slidein;
 }
-.row {
+/* .row {
   margin-right: -15px;
   margin-left: -15px;
-}
+} */
 .about {
   width: 200px;
   border: 1px solid black;
@@ -97,7 +97,8 @@ h1::before, h1::after {
   font-family: "Advent Pro";
   font-size: 150%;
   border-radius: 40% 10% / 10% 40%;  /* encadrement du bloc */
-  padding-left: 10%;
+  padding-left: 2%;
+  padding-right: 1%;
 }
 /* Barre latérale de liens */
 .network{
