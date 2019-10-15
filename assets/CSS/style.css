@@ -4,7 +4,7 @@ body {
 header {
   background-color: #ffe4f8;
   padding-bottom: 10%;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
 }
 h1::before, h1::after {
   display:inline-block;
@@ -48,6 +48,11 @@ h1::before, h1::after {
   animation-name: slidein;
 }
                               /* Fin du header */
+.navbar {
+   background-color: #ded5dd;
+   margin-bottom: 2%;
+   text-decoration: none;
+}
 /* .row {
   margin-right: -15px;
   margin-left: -15px;
