@@ -26,7 +26,7 @@ h1::before, h1::after {
   }
 }
                               /* début du header */
-#Nom {
+.Nom {
   text-align: center;
   font-style: normal;
   font-family: serif;
@@ -35,7 +35,7 @@ h1::before, h1::after {
   top: 80px;
   font-family: "Mansalva";
 }
-#Fonction {
+.Fonction {
   text-align: center;
   font-style: normal;
   font-family: serif;
