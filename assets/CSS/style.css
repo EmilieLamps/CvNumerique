@@ -48,10 +48,22 @@ h1::before, h1::after {
   animation-name: slidein;
 }
                               /* Fin du header */
-.navbar {
-   background-color: #ded5dd;
-   margin-bottom: 2%;
-   list-style-type: none;
+.nav {
+  background-color: #ded5dd;
+  text-decoration: none;
+  display: inline;
+  box-sizing: border-box;
+}
+.menu {
+  background-color: #ded5dd;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-link {
+  color: #FFFF;
+  font-family: "Advent Pro";
+  font-size: 150%;
 }
 .about {
   border: 1px solid black;
