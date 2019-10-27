@@ -3,8 +3,11 @@ body {
 }
 header {
   background-color: #ffe4f8;
-  padding-bottom: 10%;
-  /* margin-bottom: 2%; */
+  background-position: center;
+  background-image: url('../IMG/cover.png');
+  background-size: cover;
+  position: relative;
+  height: 30%;
 }
 h1::before, h1::after {
   display:inline-block;
@@ -34,6 +37,7 @@ h1::before, h1::after {
   position: relative;
   top: 20%;
   font-family: "Mansalva";
+  color : #cbad6c
 }
 .Fonction {
   text-align: center;
@@ -41,7 +45,7 @@ h1::before, h1::after {
   font-family: serif;
   font-size: 200%;
   position: relative;
-  top: 70%;
+  top: 35%;
   font-family: "Advent Pro";
   /* Slide du header */
   animation-duration: 3s;
@@ -53,9 +57,10 @@ h1::before, h1::after {
   text-decoration: none;
   display: inline;
   box-sizing: border-box;
+  position: relative;
 }
 .menu {
-  background-color: #ded5dd;
+  background-color: #cbad6c;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
@@ -84,7 +89,6 @@ h1::before, h1::after {
   float: left;
   margin-right: 5%;
 }
-
 .qualifications {
   border: 1px solid black;
   font-family: "Advent Pro";
@@ -102,7 +106,6 @@ h1::before, h1::after {
   padding-left: 2%;
   padding-right: 1%;
   /* background-color: #ffe4f8; */
-
 }
                           /* Barre latérale de liens */
 .network{
