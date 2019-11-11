@@ -35,9 +35,9 @@ h1::before, h1::after {
   text-align: center;
   font-style: normal;
   font-family: serif;
-  font-size: 550%;
+  font-size: 600%;
   position: relative;
-  top: 40%;
+  top: 52%;
   font-family: "Mansalva";
   color : #cbad6c;  /* doré */
 }
@@ -45,9 +45,9 @@ h1::before, h1::after {
   text-align: center;
   font-style: normal;
   font-family: serif;
-  font-size: 230%;
+  font-size: 275%;
   position: relative;
-  top: 50%;
+  top: 65%;
   font-family: "Advent Pro";
   color: #b76c77; /* Rose gold */
   /* Slide du header */
@@ -58,13 +58,17 @@ h1::before, h1::after {
                               /* Début de la navBar */
                               /* Ajouter le menu burger */
 .nav {
-  background-color: #ded5dd;
   text-decoration: none;
   display: inline;
-  box-sizing: border-box;
+  width: 100%;
   position: relative;
-
 }
+/* .no-gutters{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
+} */
 .menu {
   background-color: #background: #f3e2c7; /* Old browsers */
 background: -moz-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
@@ -79,6 +83,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
   color: #FFFF;
   font-family: "Advent Pro";
   font-size: 150%;
+}
+.nav a:hover {
+  color: #b76c77; /*Change la couleur du texte au survol de la souris*/
+  font-weight: bold;
+  font-size: 175%;
 }
                               /* Fin de la navBar */
                               /* Début A propos */
@@ -134,12 +143,236 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
 .link {
    width: 50%; /* taille des images "network" */
 }
-                          /* Début du footer */
-footer {
-    background-color: #ffe4f8;
+                          /* Début des cercles de progression */
+              /* Div de fond de bloc */
+.progressBar {
+  background-color: #e4d8de;
+  height: 20%;
+  margin-top: 5%;
 }
-.contact2 {
-  text-align: center;
-  font-size: 200%;
-  font-family: "Advent Pro";
+.progress{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none; /*Permet de garder le % visible après la fin de l'animation*/
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #FFFF;
+    font-size: 24px;
+    color: #b76c77;
+    line-height: 135px; /*Hauteur du pourcentage dans le cercle*/
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.progress .progress-bar{
+    border-color: #cbad6c;
+}
+.progress .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+    border-color: #fdba04;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar{
+    border-color: #ed687c;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.green .progress-bar{
+    border-color: #1abc9c;
+}
+.progress.green .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+/* Début animation du premier cercle de progression */
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(60deg);
+        transform: rotate(60deg);
+    }
+}
+/* Fin animation du premier cercle de prog' */
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+/* @media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+} */
+
+                          /* Fin des cercles de progression */
+                          /* Media Queries */
+
+@media screen and (max-width: 600px) {
+  header {
+    background-color: #ffe4f8;
+    background-position: center;
+    background-image: url('../IMG/cover.png');
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover;
+    position: relative;
+    height: 8%;
+  }
+  h1::before, h1::after {
+    display:none;
+  }
+  .Nom {
+    text-align: center;
+    font-style: normal;
+    font-family: serif;
+    font-size: 400%;
+    position: relative;
+    top: 20%;
+    font-family: "Mansalva";
+    color : #cbad6c;  /* doré */
+  }
+  .Fonction {
+    text-align: center;
+    font-style: normal;
+    font-family: serif;
+    font-size: 200%;
+    position: relative;
+    top: 35%;
+    font-family: "Advent Pro";
+    color: #b76c77; /* Rose gold */
+    /* Slide du header */
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    background-color: #ffe4f8;
+    background-position: center;
+    background-image: url('../IMG/cover.png');
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: 150%;
+    position: relative;
+    height: 10%;
+  }
+  .Nom {
+    text-align: center;
+    font-style: normal;
+    font-family: serif;
+    font-size: 400%;
+    position: relative;
+    top: 25%;
+    font-family: "Mansalva";
+    color : #cbad6c;  /* doré */
+  }
+  .Fonction {
+    text-align: center;
+    font-style: normal;
+    font-family: serif;
+    font-size: 200%;
+    position: relative;
+    top: 35%;
+    font-family: "Advent Pro";
+    color: #b76c77; /* Rose gold */
+    /* Slide du header */
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
 }
