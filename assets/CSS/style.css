@@ -1,5 +1,7 @@
 body {
   background-color: #FFFF;
+  margin: 0;
+  padding: 0;
 }
 header {
   background-color: #ffe4f8;
@@ -34,7 +36,6 @@ h1::before, h1::after {
 .Nom {
   text-align: center;
   font-style: normal;
-  font-family: serif;
   font-size: 600%;
   position: relative;
   top: 52%;
@@ -44,7 +45,6 @@ h1::before, h1::after {
 .Fonction {
   text-align: center;
   font-style: normal;
-  font-family: serif;
   font-size: 275%;
   position: relative;
   top: 65%;
@@ -57,26 +57,23 @@ h1::before, h1::after {
                               /* Fin du header */
                               /* Début de la navBar */
                               /* Ajouter le menu burger */
-.nav {
+.navbar-nav {
   text-decoration: none;
-  display: inline;
-  width: 100%;
+  display: inline-block;
+  /* width: 100%; */
   position: relative;
 }
 /* .no-gutters{
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: -15px;
+  margin-right: -15px;
 } */
-.menu {
+.nav {
   background-color: #background: #f3e2c7; /* Old browsers */
 background: -moz-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */;
   list-style-type: none;
-  display: flex;
   justify-content: space-around;
 }
 .nav-link {
