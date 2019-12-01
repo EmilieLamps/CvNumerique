@@ -60,13 +60,8 @@ h1::before, h1::after {
 .navbar-nav {
   text-decoration: none;
   display: inline-block;
-  /* width: 100%; */
   position: relative;
 }
-/* .no-gutters{
-  margin-left: -15px;
-  margin-right: -15px;
-} */
 .nav {
   background-color: #background: #f3e2c7; /* Old browsers */
 background: -moz-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
@@ -89,7 +84,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
                               /* Fin de la navBar */
                               /* Début A propos */
 .about {
-  border: 1px solid black;
+  border: 1px solid #b76c77;
   text-align: justify;
   font-family: "Advent Pro";
   font-size: 150%;
@@ -110,7 +105,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
                             /* Fin à propos */
                             /* Début formation */
 .qualifications {
-  border: 1px solid black;
+  border: 1px solid #b76c77;
   font-family: "Advent Pro";
   font-size: 150%;
   border-radius: 50% 20% / 10% 40%; /* encadrement du bloc4 */
@@ -120,7 +115,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
                             /* fin formation */
                             /* Début expériences */
 .experiences {
-  border: 1px solid black;
+  border: 1px solid #b76c77;
   font-family: "Advent Pro";
   font-size: 150%;
   border-radius: 40% 10% / 10% 40%;  /* encadrement du bloc */
