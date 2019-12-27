@@ -38,7 +38,7 @@ h1::before, h1::after {
   font-style: normal;
   font-size: 10em;
   position: relative;
-  top: 42%;
+  top: 50%;
   font-family: "Mansalva";
   color : #cbad6c;  /* doré */
 }
@@ -95,7 +95,7 @@ font-size: 2rem;
   border: 1px solid #b76c77;
   text-align: justify;
   font-family: "Advent Pro";
-  font-size: 150%;
+  font-size: 1.7rem;
   box-shadow: 12px 12px 2px 1px rgb(222, 213, 221);
 }
 .about h3 {
@@ -115,7 +115,7 @@ font-size: 2rem;
 .qualifications {
   border: 1px solid #b76c77;
   font-family: "Advent Pro";
-  font-size: 150%;
+  font-size: 1.7rem;
   border-radius: 50% 20% / 10% 40%; /* encadrement du bloc4 */
   padding-left: 2%;
   padding-top: 1%;
@@ -125,7 +125,7 @@ font-size: 2rem;
 .experiences {
   border: 1px solid #b76c77;
   font-family: "Advent Pro";
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border-radius: 40% 10% / 10% 40%;  /* encadrement du bloc */
   padding-top: 1%;
   padding-left: 2%;
@@ -136,9 +136,17 @@ font-size: 2rem;
 /* Bloc compétences */
 .titleCompetencesBloc {
   color: #FFFF;
-  font-size: 2.2em;
+  font-size: 2.8em;
   font-family: "Advent Pro";
   text-shadow: 1px 1px 2px black;
+}
+.titleCompetencesBloc::before, .titleCompetencesBloc::after {
+  display:inline-block;
+  vertical-align: middle;
+  height:0.2vh;
+  width:40vh;
+  background: #cbad6c;
+  content:""
 }
 .titlesCompetences {
   color: #b76c77;
@@ -149,7 +157,7 @@ font-size: 2rem;
                           /* Début des cercles de progression */
 .progressBar {
   background-color: #e4d8de;
-  height: 30%;
+  height: 35%;
   margin-top: 5%;
 }
 .progress{
@@ -306,6 +314,14 @@ font-size: 2rem;
 .card-MPE{
   width: 20rem;
   border: 3px solid  #ffe4f8;
+}
+.contactTitles::before, .contactTitles::after {
+  display:inline-block;
+  vertical-align: middle;
+  height:0.2vh;
+  width:10vh;
+  background: #cbad6c;
+  content:""
 }
 /* @media only screen and (max-width: 990px){
     .progress{ margin-bottom: 20px; }
