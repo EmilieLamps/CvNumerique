@@ -10,7 +10,7 @@ header {
   -webkit-background-size: 150%; /* pour anciens Chrome et Safari */
   background-size: 150%;
   position: relative;
-  height: 45%;
+  height: 30%;
 }
                   /* régler l'image avec un media queries pour le responsive */
 h1::before, h1::after {
@@ -38,7 +38,7 @@ h1::before, h1::after {
   font-style: normal;
   font-size: 10em;
   position: relative;
-  top: 35%;
+  top: 42%;
   font-family: "Mansalva";
   color : #cbad6c;  /* doré */
 }
@@ -83,10 +83,13 @@ position: relative;
   text-shadow: 1px 1px 2px black;
   float: right;
 }
-h3 {
-  font-size: 2rem;
-}
                               /* Fin de la navBar */
+h3 {
+font-size: 2rem;
+}
+#presentation{
+  height: 38%;
+}
                               /* Début A propos */
 .about {
   border: 1px solid #b76c77;
@@ -146,7 +149,7 @@ h3 {
                           /* Début des cercles de progression */
 .progressBar {
   background-color: #e4d8de;
-  height: 20%;
+  height: 30%;
   margin-top: 5%;
 }
 .progress{
@@ -297,13 +300,18 @@ h3 {
         transform: rotate(126deg);
     }
 }
+#projects {
+  height: 30%;
+}
+.card-MPE{
+  width: 20rem;
+  border: 3px solid  #ffe4f8;
+}
 /* @media only screen and (max-width: 990px){
     .progress{ margin-bottom: 20px; }
 } */
-
                           /* Fin des cercles de progression */
                           /* Media Queries */
-
 @media screen and (max-width: 600px) {
   header {
     background-color: #ffe4f8;

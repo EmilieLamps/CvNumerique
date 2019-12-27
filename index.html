@@ -53,14 +53,14 @@
         </nav>
         <!-- Fin de la navBar -->
         <!-- Début colonne A propos -->
-        <div class="container-fluid px-5">
+        <div class="container-fluid px-5" id="presentation">
           <div class="row">
             <aside class="col-md-3 ml-3 mt-5 about px-3">
               <h3>A propos</h3>
               <img class="img-fluid w-25" src="assets/IMG/profil.jpg" alt="photo de profil">
               <p>Attirée par le domaine du numérique depuis de nombreuses années, j’ai décidé d’ouvrir en 2009, un e-commerce de prêt-à-porter féminin, à tout juste 18 ans.</p>
               <p>Après 5 années avec le statut d’indépendante, l’envie de découvrir le travail en équipe et le  contact direct avec le client se faisant ressentir, j’ai choisi d’intégrer l’enseigne Promod, en tant que Conseillère de mode. A ce poste, j’ai pu perfectionner mes techniques de vente.</p>
-              <p>Mon nouveau challenge : allier mes expériences en accompagnant les clients à réaliser et utiliser leur site web de manière différente, comme un support de travail, un outil et non comme une simple "carte de visite".</p>
+              <p>Mon nouveau challenge : allier mes expériences en accompagnant les clients à réaliser et utiliser leur site web de manière différente, comme un support de travail, un outil, et non comme une simple "carte de visite".</p>
             </aside>
             <!-- Fin de la colonne A propos  -->
             <!-- Début colonne Formation -->
@@ -79,33 +79,140 @@
           </div>
         </div>
         <!-- Fin de la colonne expériences  -->
-          <!-- Début des cercles de progression -->
-          <div class="container-fluid progressBar px-0 mt-5" id="competences">
-            <div class="row">
-              <div class="container-fluid mt-2 mb-4">
-                <p class="titleCompetencesBloc text-center font-weight-bold">Mes compétences</p>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <p class="text-center titlesCompetences">HTML</p>
-                <div class="progress" id="progressHTML">
-                  <span class="progress-left">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <span class="progress-right">
-                    <span class="progress-bar"></span>
-                  </span>
-                  <div class="progress-value">15%</div>
-                </div>
+        <!-- Début des cercles de progression -->
+        <div class="container-fluid progressBar px-0 mt-5" id="competences">
+          <div class="row">
+            <div class="container-fluid mt-2 mb-5">
+              <p class="titleCompetencesBloc text-center font-weight-bold">Mes compétences</p>
+            </div>
+            <!-- Cercle HTML -->
+            <div class="col-md-2 col-sm-6">
+              <p class="text-center titlesCompetences">HTML</p>
+              <div class="progress" id="progressHTML">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">15%</div>
               </div>
             </div>
-          </div>
+            <!-- Fin cercle HTML -->
+            <!-- Cercle CSS -->
+            <div class="col-md-2 col-sm-6">
+              <p class="text-center titlesCompetences">CSS</p>
+              <div class="progress" id="progressCSS">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">15%</div>
+              </div>
+            </div>
+            <!-- Fin cercle CSS -->
+            <!-- Cercle Bootstrap -->
+            <div class="col-md-2 col-sm-6">
+              <p class="text-center titlesCompetences">Bootstrap</p>
+              <div class="progress" id="progressBootstrap">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">15%</div>
+              </div>
+            </div>
+            <!-- Fin cercle Bootstrap -->
+            <!-- Cercle JavaScript -->
+            <div class="col-md-2 col-sm-6">
+              <p class="text-center titlesCompetences">JavaScript</p>
+              <div class="progress" id="progressJavaScript">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">15%</div>
+              </div>
+            </div>
+            <!-- Fin cercle JavaScript -->
+            <!-- Cercle JQuery -->
+            <div class="col-md-2 col-sm-6">
+              <p class="text-center titlesCompetences">jQuery</p>
+              <div class="progress" id="progressJQuery">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">15%</div>
+              </div>
+            </div>
+            <!-- Fin cercle jQuery -->
+            <!-- Cercle PHP -->
+            <div class="col-md-2 col-sm-6">
+              <p class="text-center titlesCompetences">PHP</p>
+              <div class="progress" id="progressPHP">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">15%</div>
+              </div>
+            </div>
+            <!-- Fin cercle PHP -->
+          </div> <!-- Fermeture de la row du container progressBar -->
+        </div> <!-- Fermeture du container progressBar -->
         <!-- Fin des cercles de progression -->
         <!-- Début de la partie "projets" -->
-        <div class="container-fluid" id="projects">
-        </div>
+        <div class="container-fluid px-0 mt-5" id="projects">
+          <div class="row justify-content-around">
+            <div class="container-fluid mt-2 mb-5">
+              <p class="titleCompetencesBloc text-center font-weight-bold">Mes Projets</p>
+            </div>
+            <div class="card-MPE col-md-2 col-sm-3 mt-5">
+              <img class="card-img-top" src="..." alt="Logo Ma Petite Ecole">
+              <div class="card-body">
+                <h4 class="card-title">Ma Petite Ecole</h4>
+                <p class="card-text">Ma Petite Ecole, en cours de développement, est le site qui sera présenté lors du passage du Titre Professionnel de DWWM</p>
+                <a href="#" class="btn btn-outline">Voir</a>
+              </div>
+            </div>
+            <div class="card-MPE col-md-2 col-sm-3 mt-5">
+              <img class="card-img-top" src="..." alt="Logo Ma Petite Ecole">
+              <div class="card-body">
+                <h4 class="card-title">Ma Petite Ecole</h4>
+                <p class="card-text">Ma Petite Ecole, en cours de développement, est le site qui sera présenté lors du passage du Titre Professionnel de DWWM</p>
+                <a href="#" class="btn btn-outline">Voir</a>
+              </div>
+            </div>
+            <div class="card-MPE col-md-2 col-sm-3 mt-5">
+              <img class="card-img-top" src="..." alt="Logo Ma Petite Ecole">
+              <div class="card-body">
+                <h4 class="card-title">Ma Petite Ecole</h4>
+                <p class="card-text">Ma Petite Ecole, en cours de développement, est le site qui sera présenté lors du passage du Titre Professionnel de DWWM</p>
+                <a href="#" class="btn btn-outline">Voir</a>
+              </div>
+            </div>
+          </div> <!-- Fermeture de la row du container projects -->
+        </div> <!-- Fermeture du container projects -->
         <!-- Fin de la partie "projets" -->
         <!-- Début de la modale contact -->
-
+        <footer class="container-fluid" id="contact">
+          <div class="row">
+            <div class="container-fluid mt-2 mb-5">
+              <p class="titleCompetencesBloc text-center font-weight-bold">Contact</p>
+            </div>
+          </div>
+        </footer>
         <!-- Fin de la modale contact -->
       </div> <!--fermeture col de la page -->
     </div> <!--fermeture row de la page -->
