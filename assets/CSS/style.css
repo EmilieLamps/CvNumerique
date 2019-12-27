@@ -10,7 +10,7 @@ header {
   -webkit-background-size: 150%; /* pour anciens Chrome et Safari */
   background-size: 150%;
   position: relative;
-  height: 30%;
+  height: 45%;
 }
                   /* régler l'image avec un media queries pour le responsive */
 h1::before, h1::after {
@@ -36,18 +36,18 @@ h1::before, h1::after {
 .Nom {
   text-align: center;
   font-style: normal;
-  font-size: 600%;
+  font-size: 10em;
   position: relative;
-  top: 52%;
+  top: 35%;
   font-family: "Mansalva";
   color : #cbad6c;  /* doré */
 }
 .Fonction {
   text-align: center;
   font-style: normal;
-  font-size: 275%;
+  font-size: 4rem;
   position: relative;
-  top: 65%;
+  top: 50%;
   font-family: "Advent Pro";
   color: #b76c77; /* Rose gold */
   /* Slide du header */
@@ -56,30 +56,35 @@ h1::before, h1::after {
 }
                               /* Fin du header */
                               /* Début de la navBar */
-                              /* Ajouter le menu burger */
-.navbar-nav {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-}
 .nav {
   background-color: #background: #f3e2c7; /* Old browsers */
 background: -moz-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */;
-  list-style-type: none;
-  justify-content: space-around;
+list-style-type: none;
+text-decoration: none;
+display: inline-block;
+position: relative;
 }
 .nav-link {
   color: #FFFF;
   font-family: "Advent Pro";
-  font-size: 150%;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px black;
 }
 .nav a:hover {
   color: #b76c77; /*Change la couleur du texte au survol de la souris*/
   font-weight: bold;
-  font-size: 175%;
+  font-size: 2.2rem;
+}
+.bars {
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px black;
+  float: right;
+}
+h3 {
+  font-size: 2rem;
 }
                               /* Fin de la navBar */
                               /* Début A propos */
@@ -117,7 +122,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
 .experiences {
   border: 1px solid #b76c77;
   font-family: "Advent Pro";
-  font-size: 150%;
+  font-size: 1.5rem;
   border-radius: 40% 10% / 10% 40%;  /* encadrement du bloc */
   padding-top: 1%;
   padding-left: 2%;
@@ -125,18 +130,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
   /* background-color: #ffe4f8; */
 }
                           /* Fin expériences */
-                          /* Barre latérale de liens */
-.network{
-  border: 1px solid black;
+/* Bloc compétences */
+.titleCompetencesBloc {
+  color: #FFFF;
+  font-size: 2.2em;
   font-family: "Advent Pro";
-  font-size: 170%;
-  text-align: center;
+  text-shadow: 1px 1px 2px black;
 }
-.link {
-   width: 50%; /* taille des images "network" */
+.titlesCompetences {
+  color: #b76c77;
+  font-size: 1.7rem;
+  font-family: "Advent Pro";
+  text-shadow: 1px 1px 1px black;
 }
                           /* Début des cercles de progression */
-              /* Div de fond de bloc */
 .progressBar {
   background-color: #e4d8de;
   height: 20%;
@@ -336,21 +343,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
 }
 @media screen and (max-width: 800px) {
   header {
-    background-color: #ffe4f8;
+    background-color: #ffffff;
     background-position: center;
     background-image: url('../IMG/cover.png');
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: 150%;
+    background-size: 170%;
     position: relative;
     height: 10%;
+    background-repeat: no-repeat;
   }
   .Nom {
     text-align: center;
     font-style: normal;
     font-family: serif;
-    font-size: 400%;
+    font-size: 3em;
     position: relative;
-    top: 25%;
+    top: 55%;
     font-family: "Mansalva";
     color : #cbad6c;  /* doré */
   }
@@ -358,13 +366,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', end
     text-align: center;
     font-style: normal;
     font-family: serif;
-    font-size: 200%;
+    font-size: 1.5em;
     position: relative;
-    top: 35%;
+    top: 55%;
     font-family: "Advent Pro";
     color: #b76c77; /* Rose gold */
     /* Slide du header */
     animation-duration: 3s;
     animation-name: slidein;
+  }
+  .nav-link {
+      font-size: 1.5em;
+  }
+  .nav a:hover {
+      font-size: 1.8em;
   }
 }

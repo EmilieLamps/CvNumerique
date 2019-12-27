@@ -21,8 +21,8 @@
       <div class="col">
         <!-- Image header + nom + fonction -->
         <header class="container-fluid" id="home">
-          <div class="row">
-            <div class="col-lg-12">
+          <div class="row pb-1">
+            <div class="col-md-12">
               <h1 class="Nom">Emilie Lamps</h1>
               <h2 class="Fonction">Développeur Web Junior</h2>
             </div>
@@ -30,83 +30,90 @@
         </header>
         <!-- Fin du header -->
         <!-- Début de la navBar -->
-        <div class="container-fluid sticky-top px-0">
-          <nav class="navbar-nav nav-fill w-100 pb-5">
-            <ul class="nav">
-              <li><a class="nav-link" href="#home">Accueil</a></li>
-              <li><a class="nav-link" href="#qualifications">Mes compétences</a></li>
-              <li><a class="nav-link" href="#projects">Mes Projets</a></li>
-              <li><a class="nav-link" href="#contact">Contact</a></li>
+        <nav class="container-fluid navbar navbar-expand-lg sticky-top nav mb-5 justify-content-around px-0">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bars navbar-toggler-icon text-white justify-content-center"><i class="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li>
+                <a class="nav-link" href="#home">Accueil</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#competences">Mes compétences</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#projects">Mes projets</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
         <!-- Fin de la navBar -->
         <!-- Début colonne A propos -->
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="row">
-              <aside class="col ml-5 mt-5 about">
-                <h3>A propos</h3>
-                <img src="assets/IMG/profil.jpg" alt="photo de profil">
-                <p>Présentation "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
-              </aside>
-            </div>
-          </div>
-          <!-- Fin de la colonne A propos  -->
-          <!-- Début colonne Formation -->
-          <section class="col-md-3 offset-2 mb-auto qualifications pt-3">
-            <h3>Formation</h3>
-            <p>2019-2020 : La Manu : formation Développeur Web & Web Mobile (805h)</p>
-          </section>
-          <!-- Fin de la colonne Formation -->
-          <!-- Début de la colonne expériences -->
-          <section class="col-md-3 offset-1 mt-auto experiences">
-            <h3>Expériences</h3>
-            <p>2015-Aujourd'hui : PROMOD : Conseillère de mode</p>
-            <p>2009-2014 : L'Effet Mode : Auto-Entrepreneur</p>
-          </section>
-          <!-- Fin de la colonne expériences  -->
-          <!-- Début barre latérale Liens  -->
-          <!-- <aside class="col-md-1 mt-5 mb-5 pt-5 pb-5 offset-1 network">
-            <h3>Liens</h3>
-            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-            <p class="link pt-3">Github</p>
-            <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-            <p>LinkedIn</p>
-            <img class="link pt-3" src="assets/IMG/Viadeo_logo.png" alt="viadeo logo">
-            <p>Viadeo</p>
-            <img class="link pt-3" src="assets/IMG/print1.png" alt="print">
-            <p>Print</p>
-          </aside>
-        </div> -->
-        <!-- Fin de la barre latérale Liens -->
-        <!-- Début des cercles de progression -->
-          <!-- Cercle prog HTML -->
-        <div class="container-fluid progressBar" id="qualifications">
+        <div class="container-fluid px-5">
           <div class="row">
-            <div class="col-md-3 col-sm-6 mt-5">
-              <div class="progress" id="progressHTML">
-                <span class="progress-left"><span class="progress-bar"></span></span>
-                <span class="progress-right">
-                  <span class="progress-bar"></span>
-                </span>
-                <div class="progress-value">15%</div>
+            <aside class="col-md-3 ml-3 mt-5 about px-3">
+              <h3>A propos</h3>
+              <img class="img-fluid w-25" src="assets/IMG/profil.jpg" alt="photo de profil">
+              <p>Attirée par le domaine du numérique depuis de nombreuses années, j’ai décidé d’ouvrir en 2009, un e-commerce de prêt-à-porter féminin, à tout juste 18 ans.</p>
+              <p>Après 5 années avec le statut d’indépendante, l’envie de découvrir le travail en équipe et le  contact direct avec le client se faisant ressentir, j’ai choisi d’intégrer l’enseigne Promod, en tant que Conseillère de mode. A ce poste, j’ai pu perfectionner mes techniques de vente.</p>
+              <p>Mon nouveau challenge : allier mes expériences en accompagnant les clients à réaliser et utiliser leur site web de manière différente, comme un support de travail, un outil et non comme une simple "carte de visite".</p>
+            </aside>
+            <!-- Fin de la colonne A propos  -->
+            <!-- Début colonne Formation -->
+            <section class="col-md-3 offset-1 mb-auto qualifications pt-3">
+              <h3>Formation</h3>
+              <p>2019-2020 : La Manu : formation Développeur Web & Web Mobile (805h)</p>
+              <p>Préparation au Titre Professionnel</p>
+            </section>
+            <!-- Fin de la colonne Formation -->
+            <!-- Début de la colonne expériences -->
+            <section class="col-md-3 offset-1 mt-auto experiences">
+              <h3>Expériences</h3>
+              <p>2015-Aujourd'hui : PROMOD : Conseillère de mode</p>
+              <p>2009-2014 : L'Effet Mode : Auto-Entrepreneur</p>
+            </section>
+          </div>
+        </div>
+        <!-- Fin de la colonne expériences  -->
+          <!-- Début des cercles de progression -->
+          <div class="container-fluid progressBar px-0 mt-5" id="competences">
+            <div class="row">
+              <div class="container-fluid mt-2 mb-4">
+                <p class="titleCompetencesBloc text-center font-weight-bold">Mes compétences</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <p class="text-center titlesCompetences">HTML</p>
+                <div class="progress" id="progressHTML">
+                  <span class="progress-left">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <span class="progress-right">
+                    <span class="progress-bar"></span>
+                  </span>
+                  <div class="progress-value">15%</div>
+                </div>
               </div>
             </div>
           </div>
+        <!-- Fin des cercles de progression -->
+        <!-- Début de la partie "projets" -->
+        <div class="container-fluid" id="projects">
         </div>
-          <!-- Fin cercle HTML -->
-          <!-- Cercle prog CSS -->
+        <!-- Fin de la partie "projets" -->
+        <!-- Début de la modale contact -->
 
-          <!-- Fin cercle CSS -->
-      <!-- Fin des cercles de progression -->
-    </div> <!--fermeture col de la page -->
-  </div> <!--fermeture row de la page -->
-</div> <!--fermeture du container de la page -->
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Fin de la modale contact -->
+      </div> <!--fermeture col de la page -->
+    </div> <!--fermeture row de la page -->
+  </div> <!--fermeture du container de la page -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
