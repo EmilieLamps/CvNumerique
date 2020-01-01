@@ -46,7 +46,7 @@
                 <a class="nav-link" href="#projects">Mes projets</a>
               </li>
               <li>
-                <a class="nav-link" href="#infos">Mes infos</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -66,8 +66,11 @@
             <!-- Début colonne Formation -->
             <section class="col-md-3 offset-1 mb-auto qualifications pt-3">
               <h3>Formation</h3>
-              <p>2019-2020 : La Manu : formation Développeur Web & Web Mobile (805h)</p>
-              <p>Préparation au Titre Professionnel</p>
+              <p>2019-2020 : La Manu, l'Ecole des métiers du numérique</p>
+              <p>Préparation au Titre Professionnel de Développeur Web & Web Mobile</p>
+              <p>Formation de 805h - Amiens</p>
+              <p>MOOC "L'Atelier RGPD" - CNIL</p>
+              <p>MOOC : Gestion de Projet - Méthodes Agiles (en cours)</p>
             </section>
             <!-- Fin de la colonne Formation -->
             <!-- Début de la colonne expériences -->
@@ -179,20 +182,20 @@
               <p class="titleCompetencesBloc text-center font-weight-bold">Mes Projets</p>
             </div>
             <div class="card-MPE col-md-2 col-sm-3 mt-5">
-              <img class="card-img-top" src="assets/IMG/MPB.png" alt="Logo Ma Petite Ecole">
+              <img class="card-img-top" src="assets/IMG/MPB.png" alt="Logo Ma Petite Boutique">
               <div class="card-body">
                 <h4 class="card-title text-center">Ma Petite Boutique</h4>
-                <p class="card-text text-justify">Ma Petite Boutique est un site vitrine développé avec WordPress en 2 jours</p>
+                <p class="card-text text-justify">En cours</p>
                 <div class="col text-center">
                   <a href="#" class="btn btn-outline">Voir</a>
                 </div>
               </div>
             </div>
             <div class="card-MPE col-md-2 col-sm-3 mt-5">
-              <img class="card-img-top" src="assets/IMG/ADGI.png" alt="Logo Ma Petite Ecole">
+              <img class="card-img-top" src="assets/IMG/ADGI.png" alt="L'Atelier des Graines d'Intérieurs">
               <div class="card-body">
-                <h4 class="card-title text-center">Ma Petite Ecole</h4>
-                <p class="card-text text-justify">Ma Petite Ecole, en cours de développement, est le site qui sera présenté lors du passage du Titre Professionnel de DWWM</p>
+                <h4 class="card-title text-center">L'Atelier des Graines d'Intérieurs</h4>
+                <p class="card-text text-justify">En cours</p>
                 <div class="col text-center">
                   <a href="#" class="btn btn-outline">Voir</a>
                 </div>
@@ -212,17 +215,47 @@
         </div> <!-- Fermeture du container projects -->
         <!-- Fin de la partie "projets" -->
         <!-- Début de la modale contact -->
-        <footer class="container-fluid px-0 mt-5" id="infos">
+        <footer class="container-fluid px-0 mt-5" id="contact">
           <div class="row justify-content-around">
             <div class="container-fluid mt-2 mb-5">
-              <p class="titleCompetencesBloc text-center font-weight-bold">Mes infos</p>
+              <p class="titleCompetencesBloc text-center font-weight-bold">Contact</p>
             </div>
             <div class="col-md-2 col-sm-3 mt-3">
-              <p class="contactTitles text-white font-weight-bold">En bref</p>
-              <p></p>
+              <p class="contactTitles text-white font-weight-bold">Coordonnées</p>
+              <p class="text-center"><i class="fa fa-mobile text-white fa-3x" aria-hidden="true"></i></p>
+              <p class="textInfos text-white text-center">06.32.89.90.96</p>
+              <p class="text-center"><i class="fa fa-envelope text-white fa-2x" aria-hidden="true"></i></p>
+              <p class="textInfos text-white text-center">emilie.lamps@gmail.com</p>
             </div>
             <div class="col-md-2 col-sm-3 mt-3">
-              <p class="contactTitles text-white font-weight-bold">Me contacter</p>
+              <p class="contactTitles text-white font-weight-bold">Localisation</p>
+              <p class="textInfos text-white text-center">36Ter rue de la Maladrerie</p>
+              <p class="textInfos text-white text-center">80150 YVRENCH</p>
+              <!-- Button trigger modal -->
+              <div class="row justify-content-center">
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modalMaps">
+                  <i class="fa fa-map-marker text-white fa-5x" aria-hidden="true"></i>
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="modalMaps" tabindex="-1" role="dialog" aria-labelledby="modalMapsYvrench" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalMapsTitle">Localisation</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-center"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1277.4158572846834!2d1.9998750870373212!3d50.182982711887696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1577907736485!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-md-2 col-sm-3 mt-3">
               <p class="contactTitles text-white font-weight-bold">Suivez-moi</p>
