@@ -16,6 +16,9 @@
   <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="jumbotron-fluid">
+
+
   <div class="container-fluid px-0">
     <div class="row">
       <div class="col">
@@ -55,29 +58,62 @@
         <!-- Début colonne A propos -->
         <div class="container-fluid px-5" id="presentation">
           <div class="row">
-            <aside class="col-md-3 ml-3 mt-5 about px-3">
-              <h3>A propos</h3>
+            <aside class="col-md-3 ml-3 mt-5 mr-5 about px-3">
+              <h3 class="text-center font-weight-bold">A propos</h3>
               <img class="img-fluid w-25" src="assets/IMG/profil.jpg" alt="photo de profil">
               <p>Attirée par le domaine du numérique depuis de nombreuses années, j’ai décidé d’ouvrir en 2009, un e-commerce de prêt-à-porter féminin, à tout juste 18 ans.</p>
               <p>Après 5 années avec le statut d’indépendante, l’envie de découvrir le travail en équipe et le  contact direct avec le client se faisant ressentir, j’ai choisi d’intégrer l’enseigne Promod, en tant que Conseillère de mode. A ce poste, j’ai pu perfectionner mes techniques de vente.</p>
               <p>Mon nouveau challenge : allier mes expériences en accompagnant les clients à réaliser et utiliser leur site web de manière différente, comme un support de travail, un outil, et non comme une simple "carte de visite".</p>
+
+              <!-- Button trigger modal -->
+              <div class="text-center">
+
+                <button type="button" class="btn btn-outline-pink mb-3" data-toggle="modal" data-target="#exampleModalCenter" id="aboutButton">
+                  Infos personnelles
+                </button>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
             </aside>
             <!-- Fin de la colonne A propos  -->
             <!-- Début colonne Formation -->
-            <section class="col-md-3 offset-1 mb-auto qualifications pt-3">
-              <h3>Formation</h3>
-              <p>2019-2020 : La Manu, l'Ecole des métiers du numérique</p>
-              <p>Préparation au Titre Professionnel de Développeur Web & Web Mobile</p>
-              <p>Formation de 805h - Amiens</p>
-              <p>MOOC "L'Atelier RGPD" - CNIL</p>
-              <p>MOOC : Gestion de Projet - Méthodes Agiles (en cours)</p>
+            <section class="col-md-4 mb-auto qualifications pt-5 pb-5 ml-5">
+              <h3 class="text-center font-weight-bold">Formation</h3>
+              <p class="laManu text-center">La Manu, l'Ecole des métiers du numérique</p>
+              <p class="laManu text-center">Préparation au Titre Professionnel de Développeur Web<br/> & Web Mobile</p>
+              <p class="laManu text-center">Formation de 805h - Amiens</p>
+              <h3 class="text-center font-weight-bold pt-3">MOOC</h3>
+              <p class="mooc">MOOC "L'Atelier RGPD" - CNIL</p>
+              <p class="mooc">MOOC : "Sensibilisation à la Cybersécurité" - ANSSI (en cours)</p>
             </section>
             <!-- Fin de la colonne Formation -->
             <!-- Début de la colonne expériences -->
-            <section class="col-md-3 offset-1 mt-auto experiences">
-              <h3>Expériences</h3>
-              <p>2015-Aujourd'hui : PROMOD : Conseillère de mode</p>
-              <p>2009-2014 : L'Effet Mode : Auto-Entrepreneur</p>
+            <section class="col-md-4 mt-auto experiences">
+              <h3 class="text-center font-weight-bold">Expériences</h3>
+              <p><span class="font-weight-bold">2015-Aujourd'hui</span> : PROMOD, Conseillère de mode</p>
+              <p><span class="font-weight-bold">2009-2014</span> : L'EFFET MODE, Auto-Entrepreneur</p>
             </section>
           </div>
         </div>
@@ -85,12 +121,20 @@
         <!-- Début des cercles de progression -->
         <div class="container-fluid progressBar px-0 mt-5" id="competences">
           <div class="row">
-            <div class="container-fluid mt-2 mb-5">
+            <div class="container-fluid mt-2 mb-3">
               <p class="titleCompetencesBloc text-center font-weight-bold">Mes compétences</p>
             </div>
             <!-- Cercle HTML -->
+
+            <div class="col-md-12">
+              <p class="text-center text-white font-weight-bold pb-5 competencesTitles">Langages numérique</p>
+            </div>
+
+            <div class="container-fluid">
+              <div class="row">
+
             <div class="col-md-2 col-sm-6">
-              <p class="text-center titlesCompetences">HTML</p>
+              <p class="text-center titlesCompetences font-weight-bold">HTML</p>
               <div class="progress" id="progressHTML">
                 <span class="progress-left">
                   <span class="progress-bar"></span>
@@ -98,13 +142,13 @@
                 <span class="progress-right">
                   <span class="progress-bar"></span>
                 </span>
-                <div class="progress-value">15%</div>
+                <div class="progress-value">75%</div>
               </div>
             </div>
             <!-- Fin cercle HTML -->
             <!-- Cercle CSS -->
             <div class="col-md-2 col-sm-6">
-              <p class="text-center titlesCompetences">CSS</p>
+              <p class="text-center titlesCompetences font-weight-bold">CSS</p>
               <div class="progress" id="progressCSS">
                 <span class="progress-left">
                   <span class="progress-bar"></span>
@@ -112,13 +156,13 @@
                 <span class="progress-right">
                   <span class="progress-bar"></span>
                 </span>
-                <div class="progress-value">15%</div>
+                <div class="progress-value">75%</div>
               </div>
             </div>
             <!-- Fin cercle CSS -->
             <!-- Cercle Bootstrap -->
             <div class="col-md-2 col-sm-6">
-              <p class="text-center titlesCompetences">Bootstrap</p>
+              <p class="text-center titlesCompetences font-weight-bold">Bootstrap</p>
               <div class="progress" id="progressBootstrap">
                 <span class="progress-left">
                   <span class="progress-bar"></span>
@@ -126,13 +170,13 @@
                 <span class="progress-right">
                   <span class="progress-bar"></span>
                 </span>
-                <div class="progress-value">15%</div>
+                <div class="progress-value">70%</div>
               </div>
             </div>
             <!-- Fin cercle Bootstrap -->
             <!-- Cercle JavaScript -->
             <div class="col-md-2 col-sm-6">
-              <p class="text-center titlesCompetences">JavaScript</p>
+              <p class="text-center titlesCompetences font-weight-bold">JavaScript</p>
               <div class="progress" id="progressJavaScript">
                 <span class="progress-left">
                   <span class="progress-bar"></span>
@@ -140,13 +184,13 @@
                 <span class="progress-right">
                   <span class="progress-bar"></span>
                 </span>
-                <div class="progress-value">15%</div>
+                <div class="progress-value">30%</div>
               </div>
             </div>
             <!-- Fin cercle JavaScript -->
             <!-- Cercle JQuery -->
             <div class="col-md-2 col-sm-6">
-              <p class="text-center titlesCompetences">jQuery</p>
+              <p class="text-center titlesCompetences font-weight-bold">jQuery</p>
               <div class="progress" id="progressJQuery">
                 <span class="progress-left">
                   <span class="progress-bar"></span>
@@ -154,13 +198,13 @@
                 <span class="progress-right">
                   <span class="progress-bar"></span>
                 </span>
-                <div class="progress-value">15%</div>
+                <div class="progress-value">20%</div>
               </div>
             </div>
             <!-- Fin cercle jQuery -->
             <!-- Cercle PHP -->
             <div class="col-md-2 col-sm-6">
-              <p class="text-center titlesCompetences">PHP</p>
+              <p class="text-center titlesCompetences font-weight-bold">PHP</p>
               <div class="progress" id="progressPHP">
                 <span class="progress-left">
                   <span class="progress-bar"></span>
@@ -171,7 +215,59 @@
                 <div class="progress-value">15%</div>
               </div>
             </div>
+          </div>
+        </div>
             <!-- Fin cercle PHP -->
+            <div class="container-fluid px-0 pt-5 mt-3">
+              <div class="row justify-content-around">
+                <div class="col-md-3">
+                  <p class="text-center text-white font-weight-bold competencesTitles">Compétences transverses</p>
+                  <ul>
+                    <li class="competencesList font-weight-bold">Multicanal</li>
+                    <li class="competencesList font-weight-bold">Organisation</li>
+                    <li class="competencesList font-weight-bold">Autonomie</li>
+                    <li class="competencesList font-weight-bold">Travail en équipe</li>
+                    <li class="competencesList font-weight-bold">Versionning</li>
+                  </ul>
+                </div>
+                <div class="col-md-2">
+                  <p class="text-center text-white font-weight-bold competencesTitles">Logiciels</p>
+                  <ul>
+                    <li class="competencesList font-weight-bold">Atom</li>
+                    <li class="competencesList font-weight-bold">NetBeans</li>
+                    <li class="competencesList font-weight-bold">Adobe Lightroom</li>
+                    <li class="competencesList font-weight-bold">Adobe XD</li>
+                    <li class="competencesList font-weight-bold">Pack Office</li>
+                  </ul>
+                </div>
+
+            <div class="container-fluid px-0">
+              <p class="text-center text-white font-weight-bold competencesTitles mt-5 mb-5">Autres</p>
+              <div class="row justify-content-center">
+                  <div class="col-md-2 pt-3">
+                    <p class="text-center othersIcons"><i class="fa fa-trello fa-5x" aria-hidden="true"></i></p>
+                    <p class="text-center textOtherIcons">Trello</p>
+                  </div>
+                  <div class="col-md-2 pt-3">
+                    <p class="text-center othersIcons"><i class="fa fa-github fa-5x" aria-hidden="true"></i></p>
+                    <p class="text-center textOtherIcons">Github</p>
+                  </div>
+                  <div class="col-md-2 pt-3">
+                    <p class="text-center othersIcons"><i class="fa fa-wordpress fa-5x" aria-hidden="true"></i></p>
+                    <p class="text-center textOtherIcons">WordPress</p>
+                  </div>
+                  <div class="col-md-2 pt-3">
+                    <p class="text-center othersIcons"><i class="fa fa-windows fa-5x" aria-hidden="true"></i></p>
+                    <p class="text-center textOtherIcons">Windows</p>
+                  </div>
+                  <div class="col-md-2 pt-3">
+                    <p class="text-center othersIcons"><i class="fa fa-linux fa-5x" aria-hidden="true"></i></p>
+                    <p class="text-center textOtherIcons">Linux</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
           </div> <!-- Fermeture de la row du container progressBar -->
         </div> <!-- Fermeture du container progressBar -->
         <!-- Fin des cercles de progression -->
@@ -225,7 +321,7 @@
               <p class="text-center"><i class="fa fa-mobile text-white fa-3x" aria-hidden="true"></i></p>
               <p class="textInfos text-white text-center">06.32.89.90.96</p>
               <p class="text-center"><i class="fa fa-envelope text-white fa-2x" aria-hidden="true"></i></p>
-              <p class="textInfos text-white text-center">emilie.lamps@gmail.com</p>
+              <p class="textInfos text-white text-center"><a class="text-white" href="mailto:emilie.lamps@gmail.com">emilie.lamps@gmail.com</a></p>
             </div>
             <div class="col-md-2 col-sm-3 mt-3">
               <p class="contactTitles text-white font-weight-bold">Localisation</p>
@@ -242,13 +338,13 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="modalMapsTitle">Localisation</h5>
+                      <h5 class="modal-title" id="modalMapsYvrench">Localisation</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="modal-body">
-                      <p class="text-center"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1277.4158572846834!2d1.9998750870373212!3d50.182982711887696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1577907736485!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
+                      <p class="text-center"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1277.4158572846834!2d1.9998750870373212!3d50.182982711887696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1577907736485!5m2!1sfr!2sfr"></iframe></p>
                     </div>
                     <div class="modal-footer justify-content-center">
                       <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fermer</button>
@@ -280,6 +376,8 @@
       </div> <!--fermeture col de la page -->
     </div> <!--fermeture row de la page -->
   </div> <!--fermeture du container de la page -->
+
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
