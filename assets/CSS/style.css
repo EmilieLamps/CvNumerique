@@ -19,6 +19,7 @@ header {
   background-image: url('../IMG/backgroundimg.png');
   background-repeat: no-repeat;
   background-size: contain;
+  height: auto;
 }
 .modal-content {
   background: rgba(255,255,255,1);
