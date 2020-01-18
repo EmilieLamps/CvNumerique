@@ -94,6 +94,8 @@ font-size: 2rem;
   font-family: "Advent Pro";
   font-size: 1.7rem;
   box-shadow: 12px 12px 2px 1px rgb(222, 213, 221);
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
 .about h3 {
   text-align: center;
@@ -483,6 +485,9 @@ iframe{
   }
   .titleCompetencesBloc {
     font-size: 4em;
+  }
+  .competencesTitles {
+    font-size: 1.7rem;
   }
   .contactTitles{
     text-align: center;
