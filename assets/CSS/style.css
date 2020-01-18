@@ -15,6 +15,11 @@ header {
 .coverImg {
   display: none;
 }
+.modal-dialog {
+  background-image: url('../IMG/backgroundimg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
                   /* régler l'image avec un media queries pour le responsive */
 h1::before, h1::after {
   display:inline-block;
