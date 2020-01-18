@@ -150,7 +150,7 @@ font-size: 2rem;
   padding-top: 1%;
   padding-left: 2%;
   padding-right: 1%;
-
+  margin-top: auto;
   background: rgba(255,255,255,1);
   background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,0.96) 47%, rgba(228,216,222,0.92) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.96)), color-stop(100%, rgba(228,216,222,0.92)));
@@ -159,7 +159,6 @@ font-size: 2rem;
   background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,0.96) 47%, rgba(228,216,222,0.92) 100%);
   background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(246,246,246,0.96) 47%, rgba(228,216,222,0.92) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e4d8de', GradientType=1 );
-
 }
                           /* Fin expériences */
 /* Bloc compétences */
@@ -476,6 +475,13 @@ iframe{
     /* Slide du header */
     animation-duration: 3s;
     animation-name: slidein;
+  }
+  .qualifications  {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .experiences {
+    margin-top: 5vh;
   }
   .titleCompetencesBloc {
     font-size: 2.5rem;
