@@ -427,7 +427,10 @@ iframe{
     display: block;
     align-items: center;
   }
-
+  .responsiveHeader {
+    display: flex;
+    justify-content: center;
+  }
   .qualifications , .experiences  {
     margin-top: 5vh;
     margin-left: 3vh;
