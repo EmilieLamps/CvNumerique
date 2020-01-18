@@ -476,12 +476,10 @@ iframe{
     animation-duration: 3s;
     animation-name: slidein;
   }
-  .qualifications  {
+  .qualifications , .experiences  {
     margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-  .experiences {
-    margin-top: 5vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
   }
   .titleCompetencesBloc {
     font-size: 2.5rem;
