@@ -12,6 +12,9 @@ header {
   position: relative;
   height: 30vw;
 }
+.coverImg {
+  display: none;
+}
                   /* régler l'image avec un media queries pour le responsive */
 h1::before, h1::after {
   display:inline-block;
@@ -407,77 +410,24 @@ iframe{
 } */
                           /* Fin des cercles de progression */
                           /* Media Queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1500px) {
   header {
-    background-color: #ffe4f8;
-    background-position: center;
-    background-image: url('../IMG/cover.png');
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover;
-    position: relative;
-    height: 8%;
+  display: none;
   }
-  h1::before, h1::after {
-    display:none;
-  }
-  .Nom {
-    text-align: center;
-    font-style: normal;
-    font-family: serif;
-    font-size: 400%;
-    position: relative;
-    top: 20%;
-    font-family: "Mansalva";
-    color : #cbad6c;  /* doré */
-  }
-  .Fonction {
-    text-align: center;
-    font-style: normal;
-    font-family: serif;
-    font-size: 200%;
-    position: relative;
-    top: 35%;
-    font-family: "Advent Pro";
-    color: #b76c77; /* Rose gold */
-    /* Slide du header */
-    animation-duration: 3s;
-    animation-name: slidein;
+  .coverImg {
+    display: block;
+    align-items: center;
   }
 }
 @media screen and (max-width: 800px) {
   header {
-    background-color: #ffffff;
-    background-position: center;
-    background-image: url('../IMG/cover.png');
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: 170%;
-    position: relative;
-    height: 10%;
-    background-repeat: no-repeat;
+  display: none;
   }
-  .Nom {
-    text-align: center;
-    font-style: normal;
-    font-family: serif;
-    font-size: 3em;
-    position: relative;
-    top: 55%;
-    font-family: "Mansalva";
-    color : #cbad6c;  /* doré */
+  .coverImg {
+    display: block;
+    align-items: center;
   }
-  .Fonction {
-    text-align: center;
-    font-style: normal;
-    font-family: serif;
-    font-size: 1.5em;
-    position: relative;
-    top: 55%;
-    font-family: "Advent Pro";
-    color: #b76c77; /* Rose gold */
-    /* Slide du header */
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
+
   .qualifications , .experiences  {
     margin-top: 5vh;
     margin-left: 3vh;
