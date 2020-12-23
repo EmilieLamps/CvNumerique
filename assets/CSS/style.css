@@ -584,22 +584,14 @@ iframe{
   .titleCompetencesBloc {
     font-size: 4em;
   }
-
-
-
-
   .titleCompetencesBloc::before, .titleCompetencesBloc::after {
     display:inline-block;
     vertical-align: middle;
     height:0.4vh;
-    width:20vh;
+    width:10vh;
     background: #cbad6c;
     content:""
   }
-
-
-
-
   .competencesTitles {
     font-size: 1.7rem;
   }
