@@ -18,8 +18,6 @@
 <body>
   <!-- Image header + nom + fonction -->
   <div class="jumbotron-fluid">
-
-
   <div class="head"id="home">
     <header class="container-fluid" >
       <div class="row pb-1">
@@ -30,9 +28,12 @@
       </div>
     </header>
   </div>
-  <div class="responsiveHeader">
-    <img class="img-fluid coverImg justify-content-center" src="assets/IMG/elamps.png" alt="">
+  <div class="container-fluid">
+    <div class="text-center">
+      <img class="img-fluid justify-content-center" src="assets/IMG/elamps.png" alt="">
+    </div>
   </div>
+
   <!-- Fin du header -->
   <!-- Début de la navBar -->
   <nav class="container-fluid navbar sticky-top navbar-expand-lg nav mb-5 justify-content-around">
@@ -60,7 +61,7 @@
   <!-- Début colonne A propos -->
   <div class="container-fluid" id="presentation">
     <div class="row">
-      <aside class="col-md-3 mt-5 about">
+      <aside class="col-lg-3 mt-5 about">
         <h3 class="aboutTitle text-center font-weight-bold">A propos</h3>
         <img class="img-fluid w-25" src="assets/IMG/profil.jpg" alt="photo de profil">
         <p>Attirée par le domaine du numérique depuis de nombreuses années, j’ai décidé d’ouvrir en 2009, un e-commerce de prêt-à-porter féminin, à tout juste 18 ans.</p>
@@ -113,21 +114,28 @@
       </aside>
       <!-- Fin de la colonne A propos  -->
       <!-- Début colonne Formation -->
-      <section class="col-md-4 mb-auto qualifications pt-5 pb-5">
+      <section class="col-lg-4 mb-auto qualifications pt-3 pb-4">
         <h3 class="aboutTitle text-center font-weight-bold">Formation</h3>
-        <p class="laManu text-center">La Manu, l'Ecole des métiers du numérique</p>
-        <p class="laManu text-center">Préparation au Titre Professionnel de Développeur Web<br/> & Web Mobile</p>
-        <p class="laManu text-center">Formation de 805h - Amiens</p>
+        <p class="laManu text-center font-weight-bold">La Manu, l'Ecole des métiers du numérique</p>
+        <p class="formationText text-center">Préparation au Titre Professionnel de Développeur Web & Web Mobile</p>
+        <p class="laManu text-center font-weight-bold">EME-PME, École de Management</p>
+        <p class="formationText text-center">Préparation de la certification Construire et conduire un projet entreprenarial</p>
+
         <h3 class="aboutTitle text-center font-weight-bold pt-3">MOOC</h3>
         <p class="mooc">MOOC "L'Atelier RGPD" - CNIL</p>
         <p class="mooc">MOOC : "Sensibilisation à la Cybersécurité" - ANSSI (en cours)</p>
       </section>
       <!-- Fin de la colonne Formation -->
       <!-- Début de la colonne expériences -->
-      <section class="col-md-4 exp-column experiences">
-        <h3 class="aboutTitle text-center font-weight-bold">Expériences</h3>
-        <p><span class="experiencesDates font-weight-bold">2015-Aujourd'hui</span> : PROMOD, Conseillère de mode</p>
+      <section class="col-lg-4 exp-column experiences">
+        <h3 class="aboutTitle text-center font-weight-bold">Expériences & Diplômes</h3>
+        <p class="laManu text-center font-weight-bold">Expériences</p>
+        <p><span class="experiencesDates font-weight-bold">2020</span> : CEO à </p>
+        <p><span class="experiencesDates font-weight-bold">2015-2020</span> : PROMOD, Conseillère de mode</p>
         <p><span class="experiencesDates font-weight-bold">2009-2014</span> : L'EFFET MODE, Auto-Entrepreneur</p>
+        <p class="laManu text-center font-weight-bold">Diplômes</p>
+        <p><span class="experiencesDates font-weight-bold">2020</span> : Certificiation Construire et conduire un projet entreprenarial</p>
+        <p><span class="experiencesDates font-weight-bold">2020</span> : Titre Professionnel de Développeur Web & Web Mobile</p>
       </section>
     </div>
   </div>
@@ -135,7 +143,7 @@
   <div class="container-fluid  progressBar mt-5 pb-5" id="competences">
     <div class="row justify-content-center">
       <div class="col">
-        <div class="">
+        <div class="competences">
           <p class="titleCompetencesBloc text-center font-weight-bold">Mes compétences</p>
         </div> <!-- Fermeture de la div  Mes compétences -->
         <!-- Début des cercles de progression -->
@@ -144,7 +152,7 @@
         </div> <!-- Fermeture de la div Langages Numériques -->
         <!-- Cercle HTML -->
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <p class="text-center titlesCompetences font-weight-bold">HTML</p>
             <div class="progress" id="progressHTML">
               <span class="progress-left">
@@ -158,7 +166,7 @@
           </div> <!-- Fermeture de la div HTML -->
           <!-- Fin cercle HTML -->
           <!-- Cercle CSS -->
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <p class="text-center titlesCompetences font-weight-bold">CSS</p>
             <div class="progress" id="progressCSS">
               <span class="progress-left">
@@ -172,7 +180,7 @@
           </div>
           <!-- Fin cercle CSS -->
           <!-- Cercle Bootstrap -->
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <p class="text-center titlesCompetences font-weight-bold">Bootstrap</p>
             <div class="progress" id="progressBootstrap">
               <span class="progress-left">
@@ -186,7 +194,7 @@
           </div>
           <!-- Fin cercle Bootstrap -->
           <!-- Cercle JavaScript -->
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <p class="text-center titlesCompetences font-weight-bold">JavaScript</p>
             <div class="progress2" id="progressJavaScript">
               <span class="progress-left2">
@@ -200,7 +208,7 @@
           </div>
           <!-- Fin cercle JavaScript -->
           <!-- Cercle JQuery -->
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <p class="text-center titlesCompetences font-weight-bold">jQuery</p>
             <div class="progress2" id="progressJQuery">
               <span class="progress-left2">
@@ -214,7 +222,7 @@
           </div>
           <!-- Fin cercle jQuery -->
           <!-- Cercle PHP -->
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <p class="text-center titlesCompetences font-weight-bold">PHP</p>
             <div class="progress2" id="progressPHP">
               <span class="progress-left2">
@@ -229,7 +237,7 @@
           <!-- Fin cercle PHP -->
         </div> <!-- Fermeture de la row des cercles -->
         <div class="row justify-content-around">
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <p class="text-center text-white font-weight-bold competencesTitles pt-5">Compétences transverses</p>
             <ul>
               <li class="competencesList font-weight-bold">Multicanal</li>
@@ -239,7 +247,7 @@
               <li class="competencesList font-weight-bold">Versionning</li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-lg-2">
             <p class="text-center text-white font-weight-bold competencesTitles pt-5">Logiciels</p>
             <ul>
               <li class="competencesList font-weight-bold">Atom</li>
@@ -282,7 +290,7 @@
   <div class="container-fluid">
     <div class="row justify-content-around mt-5" id="projects">
       <p class="col-md-12 titleCompetencesBloc text-center font-weight-bold">Mes Projets</p>
-      <div class="card-MPE col-md-2 mt-5">
+      <div class="card-MPE col-lg-3 mt-5">
         <img class="card-img-top" src="assets/IMG/MPB.png" alt="Logo Ma Petite Boutique">
         <div class="card-body">
           <h4 class="card-title text-center">Ma Petite Boutique</h4>
@@ -292,7 +300,7 @@
           </div>
         </div>
       </div>
-      <div class="card-MPE col-md-2 mt-5">
+      <div class="card-MPE col-lg-3 mt-5">
         <img class="card-img-top" src="assets/IMG/ADGI.png" alt="L'Atelier des Graines d'Intérieurs">
         <div class="card-body">
           <h4 class="card-title text-center">L'Atelier des Graines d'Intérieurs</h4>
@@ -302,7 +310,7 @@
           </div>
         </div>
       </div>
-      <div class="card-MPE col-md-2 mt-5">
+      <div class="card-MPE col-lg-3 mt-5">
         <img class="card-img-top" src="assets/IMG/logoMPE.png" alt="Logo Ma Petite Ecole">
         <div class="card-body">
           <h4 class="card-title text-center">Ma Petite Ecole</h4>

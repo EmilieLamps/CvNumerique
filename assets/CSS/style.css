@@ -162,6 +162,10 @@ font-size: 2rem;
 }
 .laManu{
   margin: 1px;
+  color: #b76c77;
+}
+.formationText{
+  margin: 1px;
 }
 .mooc{
   margin : 1rem;
@@ -544,31 +548,58 @@ iframe{
   header {
   display: none;
   }
-  .coverImg {
-    display: block;
-    align-items: center;
+  .titleCompetencesBloc {
+    font-size: 3em;
+  }
+  .competencesTitles {
+    font-size: 1.7em;
+  }
+  .contactTitles{
+    text-align: center;
+    padding-top: 0.5vh;
+  }
+  .contactTitles::before, .contactTitles::after {
+    display:inline-block;
+    vertical-align: middle;
+    height:0.3vh;
+    width:15vh;
+    background: #cbad6c;
+    content:""
   }
 }
 @media screen and (max-width: 800px) {
   header {
   display: none;
   }
-  .coverImg {
-    display: block;
-    align-items: center;
-  }
-  .responsiveHeader {
+  /* .responsiveHeader {
     display: flex;
     justify-content: center;
-  }
+  } */
   .qualifications , .experiences  {
     margin-top: 5vh;
     margin-left: 3vh;
     margin-right: 3vh;
   }
+
   .titleCompetencesBloc {
     font-size: 4em;
   }
+
+
+
+
+  .titleCompetencesBloc::before, .titleCompetencesBloc::after {
+    display:inline-block;
+    vertical-align: middle;
+    height:0.4vh;
+    width:20vh;
+    background: #cbad6c;
+    content:""
+  }
+
+
+
+
   .competencesTitles {
     font-size: 1.7rem;
   }
