@@ -562,7 +562,12 @@ iframe{
     padding-top: 0.5vh;
   }
   .contactTitles::before, .contactTitles::after {
-    display:none
+    display:inline-block;
+    vertical-align: middle;
+    height:0.4vh;
+    width:4vh;
+    background: #cbad6c;
+    content:""
   }
 }
 @media screen and (max-width: 800px) {
