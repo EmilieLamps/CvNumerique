@@ -12,6 +12,9 @@ header {
   position: relative;
   height: 30vw;
 }
+.elamps {
+  display: none;
+}
 .coverImg {
   display: none;
 }
@@ -559,12 +562,7 @@ iframe{
     padding-top: 0.5vh;
   }
   .contactTitles::before, .contactTitles::after {
-    display:inline-block;
-    vertical-align: middle;
-    height:0.3vh;
-    width:15vh;
-    background: #cbad6c;
-    content:""
+    display:none
   }
 }
 @media screen and (max-width: 800px) {
@@ -582,13 +580,13 @@ iframe{
   }
 
   .titleCompetencesBloc {
-    font-size: 4em;
+    font-size: 3em;
   }
   .titleCompetencesBloc::before, .titleCompetencesBloc::after {
     display:inline-block;
     vertical-align: middle;
     height:0.4vh;
-    width:10vh;
+    width:4vh;
     background: #cbad6c;
     content:""
   }
